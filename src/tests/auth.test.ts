@@ -124,7 +124,7 @@ describe("getAPIKey", () => {
 
   it("should handle authorization header as string array (multiple values)", () => {
     const headers: IncomingHttpHeaders = {
-      authorization: ["ApiKey abc123", "Bearer def456"] as any,
+      authorization: ["ApiKey abc123", "Bearer def456"] as never,
     };
 
     // This test verifies the function handles arrays gracefully (should throw an error)
